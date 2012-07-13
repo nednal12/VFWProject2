@@ -104,9 +104,14 @@ window.addEventListener("DOMContentLoaded", function(){
 			carStuff.airFilterCB = ["Air Filter:", getItCB('airFilter')];
 			carStuff.cabinFilterCB = ["Cabin Filter:", getItCB('cabinFilter')];
 			carStuff.sparkPlugsCB = ["Spark Plugs:", getItCB('sparkPlugs')];
+			carStuff.brakePadsCB = ["Brake Pads:", getItCB('brakePads')];
 			carStuff.sBeltCB = ["Serpentine Belt:", getItCB('sBelt')];
 			carStuff.tBeltCB = ["Timing Belt:", getItCB('tBelt')];
+			carStuff.oilChange = ["Last Oil Change:", getIt('lastOilChange').value];
+			carStuff.airChange = ["Last Air Filter Change:", getIt('lastAirChange').value];
 			carStuff.handy = ["Do-it-yourselfer?:", getItByName('handy')];
+			carStuff.provider = ["Service Provider:", getIt('shops').value];
+			carStuff.notes = ["Notes:", getIt('comments').value];
 		
 		localStorage.setItem(id, JSON.stringify(carStuff));
 		alert("Vehicle Saved!");
