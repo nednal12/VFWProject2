@@ -1,6 +1,7 @@
 // Project: VFW Project 2
 // Name: Brent Marohnic
 // Term: 1207
+// Date: 2012-07-12
 
 window.addEventListener("DOMContentLoaded", function(){
 	
@@ -87,7 +88,6 @@ window.addEventListener("DOMContentLoaded", function(){
 	createMakesSelect();
 	
 	function storeData(){
-		alert(localStorage.length);
 		
 		var id = localStorage.length;
 		var carStuff = {};
@@ -107,8 +107,6 @@ window.addEventListener("DOMContentLoaded", function(){
 			carStuff.sBeltCB = ["Serpentine Belt:", getItCB('sBelt')];
 			carStuff.tBeltCB = ["Timing Belt:", getItCB('tBelt')];
 			carStuff.handy = ["Do-it-yourselfer?:", getItByName('handy')];
-		
-		alert(carStuff.handy);
 		
 		localStorage.setItem(id, JSON.stringify(carStuff));
 		alert("Vehicle Saved!");

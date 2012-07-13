@@ -29,14 +29,32 @@ form {
 
 a {
 	outline:1px dotted blue;
-	font-color
 }
 
 input {
 	background-image: -webkit-linear-gradient(top, #FFF 0%, #E2E2E2 90%);
 	border-radius: 5px;
+	box-shadow: 1px 1px #E2E2E2;
 }
 
 legend {
 	font-family:Courier;
+	font-variant:small-caps;
+	font-weight:bold;
+	font-size:larger;
+}
+
+fieldset {
+	border-radius: 5px;
+	box-shadow: 1px 1px #E2E2E2;
+}
+
+li {
+	list-style-position: inside;
+}
+
+textarea {
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(top, #FFF 0%, #E2E2E2 90%);
+	box-shadow: 1px 1px #E2E2E2;
 }
